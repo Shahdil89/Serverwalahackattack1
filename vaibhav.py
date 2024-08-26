@@ -280,8 +280,8 @@ bgmi_cooldown = {500}
 
 COOLDOWN_TIME =500
 
-# Handler for /attack command
-@bot.message_handler(commands=['attack'])
+# Handler for /attack1 command
+@bot.message_handler(commands=['attack1'])
 def handle_bgmi(message):
     user_id = str(message.chat.id)
     if user_id in allowed_user_ids:
